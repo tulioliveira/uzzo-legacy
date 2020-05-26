@@ -1,14 +1,12 @@
 import styled, { css } from 'styled-components'
 import { space, color, typography, layout, flexbox, border, shadow, variant } from 'styled-system'
 
-const Button = styled.button`
+const Input = styled.input`
   outline: 0;
-  cursor: pointer;
-  user-select: none;
   transition: all .15s ease;
   ${({ theme: { space }}) => css`
-    padding: ${space[2]} ${space[3]};
-    margin: ${space[2]} ${space[0]};
+    padding: ${space[2]}px ${space[3]}px;
+    margin: ${space[2]}px ${space[0]}px;
   `}
   ${space}
   ${color}
@@ -20,9 +18,9 @@ const Button = styled.button`
   ${variant({
     prop: 'type',
     variants: {
-      default: {
-        bg: 'grey3',
-        color: 'grey',
+      normal: {
+        bg: 'white',
+        color: 'primary',
       },
       primary: {
         bg: 'primary',
@@ -52,20 +50,24 @@ const Button = styled.button`
   })}
 
   &:hover {
-    transform: translateY(-2px);
+    box-shadow: ${({ theme }) => theme.shadows.inputHover};
+  }
+
+  &::placeholder {
+    color: ${({ theme }) => theme.colors.grey2};
   }
 `
 
-Button.defaultProps = {
+Input.defaultProps = {
   display: 'flex',
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
   fontFamily: 'CircularStd',
   fontSize: 2,
-  border: 'none',
-  borderRadius: 'button',
-  type: 'default'
+  border: 'input',
+  borderRadius: 'input',
+  type: 'normal'
 }
 
-export default Button
+export default Input

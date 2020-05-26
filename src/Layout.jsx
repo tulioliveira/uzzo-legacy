@@ -1,10 +1,9 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import theme from 'src/theme'
+import ThemeProvider from 'src/components/ThemeProvider'
 import 'src/index.css'
 
 const Layout = ({ children }) => {
-  return <ThemeProvider theme={theme}>
+  return <ThemeProvider>
     {children}
   </ThemeProvider>
 }

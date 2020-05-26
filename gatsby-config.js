@@ -1,3 +1,6 @@
+
+const path = require('path')
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -6,6 +9,12 @@
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-root-import'
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        static: path.join(__dirname, 'static')
+      }
+    }
   ]
 }
