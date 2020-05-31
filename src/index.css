@@ -38,12 +38,16 @@ body::-webkit-scrollbar-thumb {
 /* set button(top and bottom of the scrollbar) */
 body::-webkit-scrollbar-button {display:none}
 
+body {
+  margin: 0px;
+}
+
 html {
-  font-size: 1px;
+  font-size: 8px;
 }
 
 @media screen and (min-width: 1366px) {
   html {
-    font-size: 1.2px;
+    font-size: 10px;
   }
 }

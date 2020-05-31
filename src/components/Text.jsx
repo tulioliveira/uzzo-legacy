@@ -14,37 +14,37 @@ const Text = styled.div`
       default: {
         fontSize: 2,
         fontWeight: 'normal',
-        lineHeight: '20rem'
+        lineHeight: '2.5rem'
       },
       h1: {
         fontSize: 6,
         fontWeight: 'bold',
-        lineHeight: '41rem'
+        lineHeight: '5rem'
       },
       h2: {
         fontSize: 5,
         fontWeight: 'bold',
-        lineHeight: '28rem'
+        lineHeight: '3.5rem'
       },
       h3: {
         fontSize: 4,
         fontWeight: 'normal',
-        lineHeight: '22rem'
+        lineHeight: '2.75rem'
       },
       h4: {
         fontSize: 3,
         fontWeight: 'normal',
-        lineHeight: '22rem'
+        lineHeight: '2.75rem'
       },
       caption: {
         fontSize: 1,
         fontWeight: 'normal',
-        lineHeight: '16rem'
+        lineHeight: '2rem'
       },
       small: {
         fontSize: 0,
         fontWeight: 'normal',
-        lineHeight: '13rem'
+        lineHeight: '1.75rem'
       }
     }
   })}

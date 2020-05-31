@@ -12,7 +12,7 @@ const Link = styled(Text)`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2rem;
+    height: 0.25rem;
     bottom: -2px;
     left: 0;
     background-color: ${({ theme }) => theme.colors.accent};

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider as StyledProvider } from 'styled-components'
 
-const theme = {
+export const theme = {
   colors: {
     primary: '#523A34',
     accent: '#FFAD05',
@@ -31,12 +31,12 @@ const theme = {
     blue2: '#66b5f8',
     blue3: '#d5e9fa',
   },
-  fontSizes: ['12rem', '14rem', '16rem', '20rem', '24rem', '32rem', '48rem', '64rem', '90rem', '180rem'],
+  fontSizes: ['1.5rem', '1.75rem', '2rem', '2.5rem', '3rem', '4rem', '6rem', '8rem', '12rem', '24rem'],
   radii: {
     button: '6px',
     input: '6px'
   },
-  space: ['0rem', '4rem', '8rem', '16rem', '24rem', '32rem', '64rem', '128rem', '256rem', '512rem'],
+  space: ['0rem', '0.5rem', '1rem', '2rem', '3rem', '4rem', '8rem', '16rem', '32rem', '64rem'],
   borders: {
     input: '1px solid #ECEBED'
   },

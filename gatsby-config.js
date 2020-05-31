@@ -15,6 +15,12 @@ module.exports = {
         src: path.join(__dirname, 'src'),
         static: path.join(__dirname, 'static')
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
   ]
 }
