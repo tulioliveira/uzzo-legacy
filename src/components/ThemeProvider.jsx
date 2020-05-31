@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider as StyledProvider } from 'styled-components'
 
+const breakpoints = ['40em', '52em', '64em']
 export const theme = {
   colors: {
     primary: '#523A34',
@@ -44,7 +45,12 @@ export const theme = {
     input: 'none',
     inputHover: '0px 1px 9px rgba(0,0,0,0.14)'
   },
-  breakpoints: ['40em', '52em', '64em']
+  breakpoints,
+  mediaQueries: {
+    small: `@media screen and (min-width: ${breakpoints[0]})`,
+    medium: `@media screen and (min-width: ${breakpoints[1]})`,
+    large: `@media screen and (min-width: ${breakpoints[2]})`,
+  }
 }
 
 const ThemeProvider = ({ children }) => <StyledProvider theme={theme}>{children}</StyledProvider>

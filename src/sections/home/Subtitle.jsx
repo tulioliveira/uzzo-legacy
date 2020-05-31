@@ -7,16 +7,17 @@ const AnimatedView = motion.custom(View)
 
 const Subtitle = () => {
   const { scrollYProgress } = useViewportScroll()
-  const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1])
+  const yRange = useTransform(scrollYProgress, [0, 2.5], [0, 1])
   const opacity = useTransform(scrollYProgress, [0, 0.05], [0, 1])
-  const pathLength = useSpring(yRange, { stiffness: 400, damping: 90 })
+  const pathLength = useSpring(yRange, { stiffness: 2000, damping: 90 })
 
   return <AnimatedView
     flexDirection={['column', 'row']}
     alignSelf="stretch"
     alignItems="center"
     justifyContent="space-between"
-    my={2}
+    mt={2}
+    mb={4}
     opacity={0}
     animate={{ opacity: [0, 1] }}
     transition={{ ease: 'easeInOut', duration: 0.75 }}
