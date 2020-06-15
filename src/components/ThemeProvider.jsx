@@ -47,9 +47,9 @@ export const theme = {
   },
   breakpoints,
   mediaQueries: {
-    small: `@media screen and (min-width: ${breakpoints[0]})`,
-    medium: `@media screen and (min-width: ${breakpoints[1]})`,
-    large: `@media screen and (min-width: ${breakpoints[2]})`,
+    small: `(min-width: ${breakpoints[0]})`,
+    medium: `(min-width: ${breakpoints[1]})`,
+    large: `(min-width: ${breakpoints[2]})`,
   }
 }
 

@@ -11,7 +11,10 @@ const AnimatedView = motion.custom(View)
 
 const Title = () => {
   return <Media queries={theme.mediaQueries}>
-      {matches => <>
+      {matches => {
+        console.log(theme.mediaQueries)
+        console.log(matches)
+        return <>
         <View flexDirection={['column', 'row', 'row', 'row']} alignItems="center" justifyContent="space-between" px={4} py={6}>
           <AnimatedView
             flex={[0, 1]}
@@ -38,7 +41,7 @@ const Title = () => {
             <img src={LandingPage} width="90%" alt="Splash Art" />
           </AnimatedView>
         </View>
-      </>}
+      </>}}
   </Media>
 }
 
