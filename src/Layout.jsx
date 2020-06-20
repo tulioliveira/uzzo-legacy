@@ -5,7 +5,7 @@ import 'src/index.css'
 
 const Layout = ({ children }) => {
   return <ThemeProvider>
-    <View maxWidth="1400px" margin="0px auto">
+    <View maxWidth="1400px" margin="0px auto" padding="0 5vw">
       {children}
     </View>
   </ThemeProvider>

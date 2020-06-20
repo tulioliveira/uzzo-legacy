@@ -51,6 +51,7 @@ const Text = styled.div`
 `
 
 Text.defaultProps = {
+  color: 'black',
   fontFamily: 'CircularStd',
   type: 'default'
 }
